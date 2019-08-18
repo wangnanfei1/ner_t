@@ -9,6 +9,9 @@ from keras.layers import Embedding ,Bidirectional,LSTM
 
 
 class Data_set:
+    '''
+    数据预处理
+    '''
     def __init__(self, data_path, label_path, labels):
         with open(data_path, "r",encoding='utf-8') as f:
             self.data = f.read()
